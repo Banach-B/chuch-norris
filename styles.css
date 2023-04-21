@@ -1,0 +1,49 @@
+:root {
+    /* Font Family */
+    --ff-convergence: 'Convergence', sans-serif;
+    --ff-oswald: 'Oswald', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+
+    /* Font size */
+    --fs-s: 0.875em;
+    --fs-m: 1em;
+    --fs-l: 1.5em;
+    --fs-xl: 3em;
+    --fs-xxl: 6em;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.joke-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.joke {
+    font-family: var(--ff-convergence);
+    font-size: var(--fs-l);
+    text-align: center;
+    max-width: 55ch;
+}
+
+.btn {
+    margin: 1em 0;
+    font-family: var(--ff-oswald);
+    font-size: var(--fs-l);
+    padding: 0.5em 2em;
+    border-radius: 25em;
+    background: rgb(45,135,42);
+    background: linear-gradient(0deg, rgba(45,135,42,1) 0%, rgba(253,187,45,1) 100%); 
+}
+
+.btn:active {
+    transform: translateY(5px);
+}
